@@ -17,6 +17,20 @@ setTimeout(() => {
 setImmediate(() => {
    console.log("Immediate 2");
 })
+});
+function sometask(){
+    return new Promise((resolve, reject) => {
+        
+            resolve("Promise");
+    });
 }
-);
+sometask().then((data) => {
+    console.log(data);
+}
+).catch((err) => {
+    console.error(err);
+});
+process.nextTick(() => {
+    console.log("nextTick");
+});
 console.log("ending...")
