@@ -1,0 +1,22 @@
+{
+  "name": "@kavya_kukreja/lec_3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "hbs": "^4.2.0",
+    "hdc": "^0.8.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": ""
+}
