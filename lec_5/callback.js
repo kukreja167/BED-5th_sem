@@ -1,7 +1,7 @@
 //promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 function deductAmount(amount){
     return new Promise((resolve, reject) => {
-        account_balance = 199999;
+        account_balance = 1999;
     if(amount>account_balance){
 reject("your account balance is low");
     }else{
@@ -53,7 +53,7 @@ function buyproduct(product) {
 // });
 async function fun(){
     try{
-let amount= await buyproduct("iphone1");
+let amount= await buyproduct("iphone16");
 let message= await deductAmount(amount);
 console.log(message);
 }
