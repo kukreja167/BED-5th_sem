@@ -1,0 +1,2 @@
+Assignment: 10 marks
+1. Write data in file demo.txt, data will be passes using the terminal(process.argv) and then do the read write opertaions on the file.
