@@ -1,0 +1,10 @@
+1, iPhone 16, Smartphone, Apple
+2, Galaxy S24 Ultra, Smartphone, Samsung
+3, MacBook Pro 16", Laptop, Apple
+4, Dell XPS 13, Laptop, Dell
+5, Sony WH-1000XM5, Headphones, Sony
+6, Apple Watch Series 9, Smartwatch, Apple
+7, iPad Pro 12.9", Tablet, Apple
+8, Canon EOS R10, Camera, Canon
+9, JBL Flip 6, Speaker, JBL
+10, Logitech MX Master 3S, Mouse, Logitech
