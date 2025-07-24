@@ -1,0 +1,20 @@
+[
+  {
+    "name": "sdcds",
+    "age": "32",
+    "email": "sdscvs@gmail.com",
+    "password": "1234566"
+  },
+  {
+    "name": "sargunpreet",
+    "age": "20",
+    "email": "sargun@gmail.com",
+    "password": "12sargun"
+  },
+  {
+    "name": "kavya",
+    "age": "20",
+    "email": "kavya@gmail.com",
+    "password": "12kavya234"
+  }
+]

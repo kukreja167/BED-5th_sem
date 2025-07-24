@@ -6,8 +6,8 @@ app.get("/",(req,res)=>{
     // res.send("hello world")// text
     // res.send("<h1> world</h1>")//HTML
     res.json({
-        name:"upasana",
-        address:"ambala",
+        name:"Kavya",
+        address:"Zirakpur",
         isLogin:true
     })
 })
