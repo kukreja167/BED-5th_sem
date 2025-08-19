@@ -1,0 +1,14 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const BlogPost = new Schema({
+  id: Number,  
+  title: String,
+  body: String,
+  date: Date,
+  userId:{
+    type:mongoose.Schema.Types.ObjectId,
+    ref:"User"
+  }
+});
+module.exports=mongoose.model('Blogs', BlogPost)
