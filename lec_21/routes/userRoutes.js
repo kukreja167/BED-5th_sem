@@ -27,7 +27,7 @@ router.post("/",usersController.newuser);
 router.get("/users/:id",usersController.getuserbyid);
 router.delete("/users/:id",usersController.deleteuser);
 router.post("/login",usersController.login);
-router.get("home",isLogin,(req,res)=>{
+router.get("/home",isLogin,(req,res)=>{
     let username=req.username;
 res.json({
     success : true,
