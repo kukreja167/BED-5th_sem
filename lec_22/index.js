@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 // Middleware: Check login
 function isLogin(req, res, next) {
     try {
-        let token = req.headers['authorization'];
+        let token = req.headers.authorization;
         if (!token) {
             return res.json({ success: false, message: "No token provided" });
         }
@@ -69,7 +69,7 @@ app.post("/login", async (req, res) => {
             return res.json({ success: false, message: "Invalid credentials" });
         }
 
-        let token = jwt.sign({ user: user },"okkkk", { expiresIn: "1h" });
+        let token = jwt.sign({ user: user },"okkkk");
 
         res.json({
             success: true,
