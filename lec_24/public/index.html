@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #f4f4f4;
+    }
+
+    nav img {
+      height: 50px;
+      width: 50px;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
+    
+  </style>
+</head>
+<body>
+    <header>
+  <nav>
+    <a href="/">
+      <img src="" alt="logo">
+    </a>
+    <div class="links">
+      <a href="/home">Home</a>
+      <a href="/api/blogs/">All Blogs</a>
+      <a href="/addblog">Add Blog</a>
+    </div>
+  </nav>
+</header>
+  <form id="login" action="" method="POST">
+    <h2>Login</h2>
+    <ul>
+      <li><input id="login-email" type="email" name="email" placeholder="Email"></li>
+      <li><input id="login-password" type="password" name="password" placeholder="Password"></li>
+      <li><button type="submit">Login</button></li>
+    </ul>
+  </form>
+
+  <form id="signup" action="" method="POST">
+    <h2>Signup</h2>
+    <ul>
+      <li><input id="signup-name" type="text" name="name" placeholder="Name"></li>
+      <li><input 
+        id="signup-email" type="email" name="email" placeholder="Email"></li>
+      <li><input id="signup-password" type="password" name="password" placeholder="Password"></li>
+      <li><button type="submit">Signup</button></li>
+    </ul>
+  </form>
+
+  <form id="newblog" action="" method="POST">
+    <h2>New Blog</h2>
+    <ul>
+      <li><input type="text" name="title" placeholder="Title"></li>
+      <li><input type="text" name="body" placeholder="Body"></li>
+      <li><button type="submit">Add Blog</button></li>
+    </ul>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>

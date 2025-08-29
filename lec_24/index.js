@@ -1,0 +1,21 @@
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const port = 1133;
+const blogRoutes = require('./routes/blogRoutes');
+const userRoutes = require('./routes/userRoutes');
+const authRoutes = require('./routes/authRoutes');
+app.use(express.static('public'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use('/api/blogs', blogRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/auth', authRoutes);
+
+
+mongoose.connect('mongodb://127.0.0.1:27017/G27DB')
+  .then(() => console.log('Connected!'));
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
